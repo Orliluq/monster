@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "a6476aee-74bb-4f90-baa1-bcaea720dfe4",
+		"name": "Api Monster",
+		"description": "Backend Challenge (Java):  \n👻 Tema: ¡Desarrolla una API para la gestión de monstruos en una base de datos de criaturas de Halloween! 👻\n\nDetalles: El reto consiste en crear una API RESTful utilizando Java. La API debe permitir la creación, lectura, actualización y eliminación de monstruos en una base de datos de criaturas.\n\nRequisitos:\n\n- Utiliza bases de datos relacionales.\n    \n- Implementa autenticación básica.\n    \n- Documenta la API usando Swagger u OpenAPI.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28075095"
+	},
+	"item": [
+		{
+			"name": "Obtener todos los monstruos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/monsters",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"monsters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear un nuevo monstruo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \"id\": 11,\r\n    \"name\": \"Frankenstein\",\r\n    \"type\": \"Experimento\",\r\n    \"scareLevel\": 7\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/monsters",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"monsters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener un monstruo por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/monsters/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"monsters",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar un monstruo existente",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Nessie\",\r\n  \"type\": \"Dinosaurio\",\r\n  \"scareLevel\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/monsters/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"monsters",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar un monstruo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/monsters/11",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"monsters",
+						"11"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "admin123",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "admin",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "{{url}}",
+			"value": "",
+			"type": "string"
+		}
+	]
+}

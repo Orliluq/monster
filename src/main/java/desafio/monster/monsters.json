@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "Monstruo Neww",
+    "type": "Dinosaurio",
+    "scareLevel": 8
+  },
+  {
+    "id": 2,
+    "name": "Monstruo Ness",
+    "type": "Dinosaurio",
+    "scareLevel": 8
+  },
+  {
+    "id": 3,
+    "name": "Medusa",
+    "type": "Gorgona",
+    "scareLevel": 9
+  },
+  {
+    "id": 4,
+    "name": "Drácula",
+    "type": "Vampiro",
+    "scareLevel": 8
+  },
+  {
+    "id": 5,
+    "name": "Pie Grande",
+    "type": "Bestia Gigante",
+    "scareLevel": 9
+  },
+  {
+    "id": 6,
+    "name": "Fantasma",
+    "type": "Espíritu",
+    "scareLevel": 5
+  },
+  {
+    "id": 7,
+    "name": "Momia",
+    "type": "Muerto Viviente",
+    "scareLevel": 6
+  },
+  {
+    "id": 8,
+    "name": "Sombra",
+    "type": "Entidad",
+    "scareLevel": 8
+  },
+  {
+    "id": 9,
+    "name": "Zombie",
+    "type": "No Muerto",
+    "scareLevel": 7
+  },
+  {
+    "id": 10,
+    "name": "Chupacabras",
+    "type": "Criatura",
+    "scareLevel": 9
+  },
+  {
+    "id": 11,
+    "name": "Frankenstein",
+    "type": "Experimento",
+    "scareLevel": 7
+  }
+]
